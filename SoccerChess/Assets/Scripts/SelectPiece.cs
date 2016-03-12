@@ -24,6 +24,7 @@ public class SelectPiece : MonoBehaviour
     void OnMouseDown()
     {
         this.gameObject.GetComponent<SpriteRenderer>().color = Color.green;
+        selectionManager.selectNewPiece(this.gameObject);
     }
 
     public void restoreColor()
